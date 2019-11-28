@@ -1,0 +1,18 @@
+安装 graphviz
+    brew install graphviz
+将 $GOPATH/bin 加入到 $PATH
+    Mac OS: 在 .bash_profile 中修改路径
+安装 go-torch
+    go get -u github.com/uber/go-torch
+    下载并复制 flamegraph.pl (https://github.com/brendangregg/FlameGraph) 至 $GOPATH/bin 路径下
+    将 $GOPATH/bin 加入 $PATH
+
+go tool pprof prof *.prof
+    命令集合:
+        top  查看prof文件分析结果
+        list  方法名称  查看具体方法的执行信息
+        svg  生成一张svg图片，调用关系图
+
+go-torch *.prof
+
+

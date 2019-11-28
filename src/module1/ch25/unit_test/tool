@@ -1,0 +1,12 @@
+https://github.com/stretchr/testify.git
+
+//测试用例覆盖
+go test -v -cover
+
+//benchmark
+go test -bench=. //覆盖所有的benchmark测试用例
+go test -bench=. -benchmem //具体操作细节
+go test -bench=BenchmarkConcatStringByBytesBuffer //测试方法名为BenchmarkConcatStringByBytesBuffer的测试用例
+
+BDD 行为驱动开发
+https://github.com/smartystreets/goconvey.git

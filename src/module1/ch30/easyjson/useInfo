@@ -1,0 +1,4 @@
+//下载并安装
+go get -u github.com/mailru/easyjson/...
+
+/Users/a/softwork/go/gopath/bin/easyjson -all struct_def.go

@@ -1,0 +1,4 @@
+go test -bench=.
+
+go test -bench=. -cpuprofile=cpu.prof
+go test -bench=. -memprofile=mem.prof
